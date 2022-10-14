@@ -28,3 +28,9 @@
 #email-house {
   display: flex;
 }
+
+#radio-input {
+  /* display: flex; */
+  /* flex-direction: column; */
+
+}

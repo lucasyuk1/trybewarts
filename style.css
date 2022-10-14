@@ -1,9 +1,17 @@
 .header {
-    display:flex;
-    background-color: rgb(50,167,145);
+  display: flex;
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-login {
-    display: flex;
-    
+  display: flex;
+}
+
+.container {
+  display: flex;
+}
+
+.evaluation-form {
+  display: flex; 
+  width: 675px;
 }

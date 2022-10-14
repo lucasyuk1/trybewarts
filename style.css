@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   color: white;
@@ -7,10 +8,19 @@
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .container {
   display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: space-around;
 }
 
 #evaluation-form {
@@ -42,5 +52,43 @@
 
 .rates {
   display: flex;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
+  padding: 5px;
+}
+
+#email {
+  width: 100px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#senha {
+  width: 100px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#login {
+  width: 100px;
+  height: 25px;
+}
+
+.footer {
+  background-color: rgb(3, 83, 69);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin-left: 30px;
+}
+
+#house {
+  width: 149px;
 }
 

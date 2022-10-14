@@ -26,12 +26,12 @@
 
   <main class="container">
     <form id="evaluation-form" action="">
-      
+
       <div id="name-lastname">
         <input type="text" name="" id="input-name" placeholder="Nome">
         <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
       </div>
-      
+
       <div id="email-house">
         <input type="email" name="" id="input-email" placeholder="Email">
         <select name="" id="house">
@@ -42,12 +42,59 @@
         </select>
       </div>
 
-      <div id="radio-input">
-        <label for="" id="label-family">Qual sua família?</label>
-        <input type="radio" name="family" value="Frontend">Frontend
-        <input type="radio" name="family" value="Backend">Backend
-        <input type="radio" name="family" value="FullStack">Fullstack
-      </div>
+      <section class="family-content">
+        <div id="radio-input">
+          <label for="" id="label-family">Qual sua família?</label>
+          <div>
+            <input type="radio" name="family" value="Frontend">
+            <label for="">Frontend</label>
+          </div>
+          <div>
+            <input type="radio" name="family" value="Backend">
+            <label for="">Backend</label>
+          </div>
+          <div>
+            <input type="radio" name="family" value="FullStack">
+            <label for="">FullStack</label>
+          </div>
+        </div>
+
+        <div class="content">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div>
+            <input type="checkbox" value="HoFs" class="subject">
+            <label for="">HoFs</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="Jest" class="subject">
+            <label for="">Jest</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="Promises" class="subject">
+            <label for="">Promises</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="React" class="subject">
+            <label for="">React</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="SQL" class="subject">
+            <label for="">SQL</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="Python" class="subject">
+            <label for="">Python</label>
+          </div>
+
+
+        </div>
+
+      </section>
 
 
     </form>

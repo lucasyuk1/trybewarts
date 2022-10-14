@@ -6,7 +6,7 @@ window.onload = function () {
     const iEmail = email.value;
     const iSenha = senha.value;
     if (iEmail === 'tryber@teste.com' && iSenha === '123456') {
-      alert('"Olá, Tryber!"');
+      alert('Olá, Tryber!');
     } else {
       alert('Email ou senha inválidos.');
     }

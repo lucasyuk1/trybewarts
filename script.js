@@ -2,6 +2,9 @@ window.onload = function start() {
   const email = document.getElementById('email');
   const senha = document.getElementById('senha');
   const login = document.getElementById('login');
+  const bSubmit = document.getElementById('submit-btn');
+  const iAgree = document.getElementById('agreement')
+
   login.addEventListener('click', () => {
     const iEmail = email.value;
     const iSenha = senha.value;
@@ -11,4 +14,18 @@ window.onload = function start() {
       alert('Email ou senha inválidos.');
     }
   });
+
+
+  function bSubmitActive() {
+    if (iAgree.checked) {
+      bSubmit.removeAttribute('disabled');
+    } else {
+      bSubmit.setAttribute('disabled', true);
+    }
+  }
+
+  iAgree.addEventListener('click', function(){
+    bSubmitActive();
+  });
+
 };

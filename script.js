@@ -6,7 +6,7 @@ const iAgree = document.getElementById('agreement');
 const iBoxText = document.querySelector('#textarea');
 const iText = document.getElementById('counter');
 
-iBoxText.addEventListener('keyup', function(){
+iBoxText.addEventListener('keyup', function () {
   const qtdcaracteres = this.value.length;
   const restantes = 500 - qtdcaracteres;
   iText.innerHTML = restantes;

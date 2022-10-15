@@ -3,6 +3,14 @@ const senha = document.getElementById('senha');
 const login = document.getElementById('login');
 const bSubmit = document.getElementById('submit-btn');
 const iAgree = document.getElementById('agreement');
+const iBoxText = document.querySelector('#textarea');
+const iText = document.getElementById('counter');
+
+iBoxText.addEventListener('keyup', function(){
+  const qtdcaracteres = this.value.length;
+  const restantes = 500 - qtdcaracteres;
+  iText.innerHTML = restantes;
+});
 
 login.addEventListener('click', () => {
   const iEmail = email.value;

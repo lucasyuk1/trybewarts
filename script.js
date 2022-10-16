@@ -11,6 +11,7 @@ const iName = document.getElementById('input-name');
 const iLastName = document.getElementById('input-lastname');
 const userEmail = document.getElementById('input-email');
 const iHouse = document.querySelector('#house');
+let obj = {};
 
 iBoxText.addEventListener('keyup', function countCaract() {
   const qtdcaracteres = this.value.length;
@@ -76,7 +77,6 @@ function newForm() {
     }
   });
 }
-
 function objForm(e) {
   e.preventDefault();
   obj = {

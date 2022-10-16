@@ -58,17 +58,16 @@ function catchContents() {
 // Mostrando as informações preenchidas no formulário
 
 function newForm() {
-  const newSectionForm = document.createElement('section');
+  const newSectionForm = document.getElementById('form-data');
   const divImage = document.createElement('div');
   const div = document.createElement('div');
 
-  iForm.appendChild(newSectionForm);
   newSectionForm.appendChild(divImage);
   newSectionForm.appendChild(div);
-  newSectionForm.id = 'form-data';
+
   Object.keys(obj).forEach((key) => {
     const newParagraph = document.createElement('p');
-    newParagraph.innerHTML = `${key}: ${obj[key]}`;
+    newParagraph.innerHTML = `<strong>${key}: </strong>${obj[key]}`;
     div.appendChild(newParagraph);
     if (key === 'Casa') {
       divImage.classList.add(`${obj[key]}`);

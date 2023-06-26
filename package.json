@@ -1,5 +1,6 @@
 {
   "name": "sd-0x-project-trybewarts",
+  "homepage": "https://lucasyuk1.github.io/trybewarts",
   "version": "1.0.0",
   "description": "Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.",
   "main": "script.js",
@@ -7,6 +8,8 @@
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx",
     "lint:styles": "stylelint **/*.css --config .stylelintrc.json --ignore-disables --allow-empty-input",
     "cypress:open": "cypress open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "cypress run",
     "cy:browser": "cypress run --headless --browser chrome"
   },
@@ -23,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/betrybe/sd-0x-project-trybewarts/issues"
   },
-  "homepage": "https://github.com/betrybe/sd-0x-project-trybewarts#readme",
   "devDependencies": {
     "@types/cypress": "1.1.3",
     "cypress": "9.6.0",
@@ -34,6 +36,7 @@
     "eslint-config-trybe-fundamentals": "1.1.0",
     "eslint-plugin-cypress": "2.11.2",
     "eslint-plugin-import": "2.22.1",
+    "gh-pages": "^5.0.0",
     "minimist": "1.2.5",
     "mocha": "8.3.0",
     "mochawesome": "6.2.2",

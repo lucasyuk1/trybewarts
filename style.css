@@ -91,3 +91,15 @@
 #house {
   width: 149px;
 }
+
+.text-counter {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* #counter {
+  width: fit-content;
+  align-self: flex-end;
+  position: absolute;
+} */
